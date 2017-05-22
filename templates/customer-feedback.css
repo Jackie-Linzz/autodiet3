@@ -1,0 +1,38 @@
+	.header {
+	
+	padding: 10px 0;
+	border-radius: 0;
+	background-color: #f96;
+}
+
+.header .heading {
+	font-size: 26px;
+	line-height: 26px;
+	font-weight: 400;
+}
+.pack {
+	font-size: 18px;
+	line-height: 22px;
+	color: #4e5e6a;
+	background-color: #fc9;
+	
+}
+.pack .time {
+	
+	background-color: rgba(255,255,255,0.2);
+}
+.pack .item {
+	margin: 5px 0;
+}
+.pack .item .fb {
+	display: inline-block;
+	width: 30%;
+	margin: 0;
+	padding: 0;
+	color: #4e5e6a;
+}
+.pack .item .selected {
+	color: white;
+	background-color:#f96;
+	border-radius: 4px;
+}

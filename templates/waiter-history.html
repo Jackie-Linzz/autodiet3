@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no, minimal-ui" />
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+
+<!--	<link rel="stylesheet" href="base.css">
+	<link rel="stylesheet" href="waiter-history.css">
+-->
+    <link rel="stylesheet" href="{{static_url('css/base.css')}}">
+    <link rel="stylesheet" href="{{static_url('css/waiter-history.css')}}">
+
+
+
+	<!--{% block head%}{% end %} -->
+
+
+</head>
+
+<body>
+	<div class="header">
+		<div class="heading">订单记录</div>
+
+	</div>
+	<div class="content">
+        <div class="pack">
+			<div class="time">2016年4月22日</div>
+            <textarea class="gdemand"></textarea>
+            <div class="items">
+                <div class="item">
+                    <div class="row">
+                        <div class="name">空爆鸡丁</div>
+                        <div class="pn"> <div class="price">26.0</div><div class="num">0</div> </div>
+                    </div>
+                    <div class="row">
+                        <input type="text" class="demand" />
+                    </div>
+                </div>
+            </div>
+            <div class="total item">
+                <div class="row">
+                    <div class="name">总共</div>
+                    <div class="pn"> <div class="price">26.0</div><div class="num">0</div> </div>
+                </div>
+            </div>
+            <div class="status">已付款</div>
+        </div>
+	</div>
+	<div class="footer">
+		<a class="btn btn-left">返回</a>
+		
+	</div>
+    <script src="{{static_url("js/jquery-1.11.2.min.js")}}"></script>
+    <script src="{{static_url("js/jquery.mobile.custom.min.js")}}"></script>
+    <script src="{{static_url('js/base.js')}}"> </script>
+    <script src="{{static_url('js/waiter-history.js')}}"></script>
+</body>
+</html>

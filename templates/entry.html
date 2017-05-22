@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no, minimal-ui" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+
+    <link rel="stylesheet" type="text/css" href="{{static_url("css/base.css")}}">
+    <link rel="stylesheet" type="text/css" href="{{static_url("css/entry.css")}}">
+
+
+
+    <!--{% block head%}{% end %} -->
+
+
+</head>
+
+<body>
+<!-- {% block body %}
+{% end %} -->
+  <div class="header">
+    <h2 class="heading">{{heading}}</h2>
+  </div>
+  <div class="content">
+    <div class="welcome">
+      <p>{{welcome}}</p>
+    </div>
+    <div>
+      <div class="input">
+        <input type="text" class="desk-input" placeholder="请输入餐桌号" required="required">
+				<a class="btn desk-submit" href="javascript:void(0)">就餐愉快</a>
+        </div>
+	</div>
+  </div>
+
+  <script src="{{static_url("js/jquery-1.11.2.min.js")}}"></script>
+  <script src="{{static_url("js/jquery.mobile.custom.min.js")}}"></script>
+  <script src="{{static_url("js/base.js")}}"></script>
+  <script src="{{static_url("js/entry.js")}}"></script>
+
+</body>
+</html>

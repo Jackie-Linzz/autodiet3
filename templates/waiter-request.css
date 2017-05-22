@@ -1,0 +1,77 @@
+.header {
+	padding: 10px 0;
+	border-radius: 0;
+	background-color: #9cf;
+}
+
+.header .heading {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.header .btn-home {
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 80px;
+	font-size: 18px;
+	line-height: 22px;
+	border: 1px solid white;
+	border-radius: 4px;
+}
+.customer {
+	margin-bottom: 40px;
+}
+.item {
+	position: relative;
+	margin: 10px 0;
+	font-size: 18px;
+	
+}
+.item .msg {
+	padding: 10px 0;
+	line-height: 24px;
+}
+
+.item .btn-item {
+	display: block;
+	position: absolute;
+	width: 80px;
+	top: 9px;
+	right: 10px;
+	line-height: 24px;
+	border: 1px solid white;
+	border-radius: 4px;
+}
+.item .btn-item-cancel {
+	display: block;
+	position: absolute;
+	width: 80px;
+	top: 9px;
+	left: 10px;
+	line-height: 24px;
+	border: 1px solid white;
+	border-radius: 4px;
+}
+
+.customer-request {
+	background-color: #9c9;
+}
+
+.customer-submit {
+	background-color: #f66;
+}
+
+.cook-request {
+	background-color: #9cf;
+}
+
+.btn-left {
+	background-color: #9cf;
+}
+
+.btn-right {
+	background-color: #f96;
+}

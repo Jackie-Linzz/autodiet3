@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no, minimal-ui" />
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+
+<!--	<link rel="stylesheet" href="base.css">
+	<link rel="stylesheet" href="waiter-search.css">
+-->
+    <link rel="stylesheet" href="{{static_url('css/base.css')}}">
+    <link rel="stylesheet" href="{{static_url('css/waiter-search.css')}}">
+
+
+
+	<!--{% block head%}{% end %} -->
+
+
+</head>
+
+<body>
+	<div class="header">
+		<div class="heading">返回</div>
+
+	</div>
+	<div class="content">
+        <input type="text" class="input">
+        <div class="results">
+            <div class="item">
+                <div class="row">
+                    <div class="name">空爆鸡丁</div>
+                    <div class="pn"> <div class="price">26.0</div><div class="num">0</div> </div>
+                </div>
+                <div class="row">
+                    <input type="text" class="demand" />
+                    <a class="button">+</a>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+	</div>
+    <script src="{{static_url("js/jquery-1.11.2.min.js")}}"></script>
+    <script src="{{static_url("js/jquery.mobile.custom.min.js")}}"></script>
+    <script src="{{static_url('js/base.js')}}"> </script>
+    <script src="{{static_url('js/waiter-search.js')}}"></script>
+</body>
+</html>

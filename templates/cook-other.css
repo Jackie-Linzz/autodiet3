@@ -1,0 +1,56 @@
+body {
+	background-color: #ffc;
+}
+.left, .middle, .right {
+	float: left;
+	width: 33.33%;
+}
+.clear {
+	clear: both;
+}
+.left .heading {
+	font-size: 18px;
+	line-height: 22px;
+	color: white;
+	background-color: #9cf;
+	text-align: center;
+}
+.middle .heading {
+	font-size: 18px;
+	line-height: 22px;
+	color: white;
+	background-color: #9cf;
+	text-align: center;
+}
+.left .item {
+	position: relative;
+	margin: 5px 0;
+	padding-bottom: 30px;
+	font-size: 18px;
+	
+	line-height: 22px;
+	color: white;
+	background-color: #9cf;
+	border-radius: 5px;
+}
+.left .item .title {
+	text-align: center;
+}
+.left .item .desk {
+	text-align: right;
+	padding: 0 10px;
+}
+.left .item .demand {
+	text-align: left;
+	padding: 10px;
+	
+}
+.stop, .request, .home {
+	font-size: 18px;
+	padding: 10px 0;
+	margin: 50px 0;
+	color: white;
+	text-align: center;
+	background-color: #9cf;
+	border-radius: 5px;
+}

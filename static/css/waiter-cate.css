@@ -1,0 +1,80 @@
+.header {
+	padding: 10px 0;
+	border-radius: 0;
+	background-color: #9cf;
+}
+
+.header .heading {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.header .btn-search {
+	display: block;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 80px;
+	font-size: 18px;
+	line-height: 22px;
+	border: 1px solid white;
+	border-radius: 4px;
+}
+.header .btn-exit {
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 80px;
+	font-size: 18px;
+	line-height: 22px;
+	border: 1px solid white;
+	border-radius: 4px;
+}
+
+.content {
+	padding: 60px 0;
+}
+
+.div-input {
+	width: 50%;
+	margin: 0 auto;
+	font-size: 18px;
+}
+.input {
+	text-align: center;
+	background-color: transparent;
+	border: 1px solid #9cf;
+	border-radius: 6px;
+	color: #9cf;
+}
+.btn-input {
+	display: block;
+	margin-top: 10px;
+	text-align: center;
+	background-color: #9cf;
+	color: white;
+	line-height: 36px;
+	border-radius: 6px;
+}
+
+.item {
+	position: relative;
+	margin: 5px 0;
+	padding: 20px;
+	background-color: #f66;
+	border-radius: 10px;
+}
+.name {
+	line-height: 24px;
+	font-size: 24px;
+}
+.num {
+	position: absolute;
+	bottom: 20px;
+	right: 10px;
+	font-size: 14px;
+	line-height: 14px;
+	color: white;
+}

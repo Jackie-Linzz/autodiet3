@@ -1,0 +1,62 @@
+.header {
+	padding: 10px 0;
+	border-radius: 0;
+	background-color: #f96;
+}
+
+.header .heading {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.picture {
+	width: 100%;
+	min-height: 200px;
+	background-color: #f5bc83;
+}
+.div-desc {
+	position: relative;
+	padding:10px 10px 24px 10px;
+	width: 100%;
+	min-height: 100px;
+	background-color:#c96;
+}
+.div-desc .desc {
+	text-align: left;
+}
+.div-desc .pn {
+	position: absolute;
+	right: 10px;
+	bottom: 2px;
+	font-size: 18px;
+}
+.div-desc .price, .div-desc .num {
+	display: inline-block;
+	line-height: 22px;
+	
+}
+.div-desc .num{
+	min-width: 22px;
+	margin-left: 3px;
+	background-color:#f5bc83;
+	border-radius: 11px;
+}
+.demand {
+	display: block;
+	margin: 30px 0 0 0;
+	padding: 0.5em;
+	font-size: 18px;
+	width: 100%;
+	min-height: 80px;
+	border: 0 solid white;
+	color: #4e5e6a;
+}
+.dian {
+	display: block;
+	font-size: 18px;
+	line-height: 44px;
+	text-align: center;
+	background-color: #f66;
+}
+.

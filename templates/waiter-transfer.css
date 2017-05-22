@@ -1,0 +1,33 @@
+.header {
+	padding: 10px 0;
+	border-radius: 0;
+	background-color: #9cf;
+}
+
+.header .heading {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 400;
+}
+.item {
+	position: relative;
+	margin: 5px 0;
+}
+.title {
+	
+	font-size: 18px;
+	line-height: 28px;
+	color: white;
+	background-color: #9cf;
+}
+
+.button {
+	position: absolute;
+	right: 10px;
+	top: 4px;
+	padding: 0 20px;
+	font-size: 18px;
+	line-height: 18px;
+	border-radius: 9px;
+	border: 1px solid white;
+}

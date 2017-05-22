@@ -1,0 +1,137 @@
+body {
+	background-color: #ffc;
+}
+.left, .middle, .right {
+	float: left;
+	width: 33.33%;
+}
+.clear {
+	clear: both;
+}
+.left .heading {
+	font-size: 18px;
+	line-height: 22px;
+	color: white;
+	background-color: #9cf;
+	text-align: center;
+}
+.middle .heading {
+	font-size: 18px;
+	line-height: 22px;
+	color: white;
+	background-color: #9cf;
+	text-align: center;
+}
+.right .heading {
+	font-size: 18px;
+	line-height: 22px;
+	color: white;
+	background-color: #9c9;
+	text-align: center;
+}
+.left .item {
+	position: relative;
+	margin: 5px 0;
+	padding-bottom: 30px;
+	font-size: 18px;
+	line-height: 22px;
+	color: white;
+	background-color: #9cf;
+	border-radius: 5px;
+}
+.left .item .title {
+	text-align: center;
+}
+.left .item .desk {
+	text-align: right;
+	padding: 0 10px;
+}
+.left .item .demand {
+	text-align: left;
+	padding: 10px;
+	
+}
+.left .item .close {
+	position: absolute;
+	top: 0;
+	left: 5px;
+	width: 22px;
+	text-align: center;
+}
+.left .item .finish {
+	position: absolute;
+	bottom: 5px;
+	right: 10px;
+	min-width: 60px;
+	text-align: center;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+.right .item {
+	position: relative;
+	margin: 5px 0;
+	
+	font-size: 18px;
+	line-height: 22px;
+	color: white;
+	background-color: #9c9;
+	border-radius: 5px;
+}
+.right .selected {
+	background-color: #9cf;
+}
+.right .item .title {
+	text-align: center;
+}
+.right .item .desk{
+	text-align: right;
+	padding: 0 10px;
+}
+.right .item .demand {
+	text-align: left;
+	padding: 10px;
+}
+.right .item .close {
+	position: absolute;
+	top: 0;
+	left: 5px;
+	width: 22px;
+	text-align: center;
+}
+.current {
+	margin: 60px 0;
+	font-size: 18px;
+	line-height: 22px;
+	color: white;
+	background-color: #9cf;
+	border-radius: 5px;
+}
+.current .title {
+	font-size: 20px;
+	text-align: center;
+}
+.current .desk {
+	text-align: right;
+	padding: 0 10px;
+}
+.current .demand {
+	text-align: left;
+	padding: 10px;
+}
+.accept {
+	font-size: 18px;
+	padding: 20px 0;
+	text-align: center;
+	color: white;
+	background-color: #9cf;
+	border-radius: 5px;
+}
+.next {
+	font-size: 18px;
+	margin-top: 60px;
+	padding: 10px 0;
+	text-align: center;
+	color: white;
+	background-color: #9c9;
+	border-radius: 5px;
+}

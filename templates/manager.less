@@ -1,0 +1,981 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+    color:    white;		
+}
+input:-moz-placeholder, textarea:-moz-placeholder { 
+    color:    white;
+		
+}
+input::-moz-placeholder, textarea::-moz-placeholder { 
+    color:    white;
+		
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+    color:    white;
+		
+}
+input, textarea {
+	border-width: 0;
+}
+
+textarea:focus, input:focus {
+	outline: 1px solid  white;
+}
+
+
+.menu {
+	float: left;
+	width: 200px;
+	padding: 150px 0 300px 0;
+	color: white;
+	background-color: #002e5b;
+	
+	.btn-menu {
+		display: block;
+		width: 100%;
+		margin: 10px 0;
+		text-align: center;
+		font-size: 18px;
+		line-height: 44px;
+    color: white;
+		&:hover {
+			background-color: rgba(255,255,255,0.2);
+		}
+	}
+	.pressed {
+		background-color: rgba(255,255,255,0.4);
+		border-left: 4px solid white;
+	}
+}
+
+.content {
+	margin-left: 200px;
+	color: black;
+	font-size: 18px;
+}
+.section {
+	display: block;
+	padding: 150px 0;
+	width: 100%;
+}
+
+#company-info {
+	.container {
+		width: 600px;
+		margin: 0 auto;
+		
+		.label{
+			font-size: 18px;
+			line-height: 1.2em;
+		}
+		input {
+			display: block;
+			width: 100%;
+	
+			margin-bottom: 15px;
+			padding: 0 1em;
+			font-size: 18px;
+			line-height: 40px;
+	
+			background-color: rgba(204,204,204,0.2);
+			border-width: 0;
+	
+		}
+		textarea {
+			display: block;
+			width: 100%;
+			min-height: 150px;
+			margin-bottom: 15px;
+			padding: 0 1em;
+			font-size: 18px;
+			line-height: 1.2em;
+	
+			background-color: rgba(204,204,204,0.2);
+			border-width: 0;
+	
+		}
+		.btn-submit {
+			display: block;
+			margin-top: 30px;
+			font-size: 18px;
+			line-height: 40px;
+			text-align: center;
+			color: white;
+			background-color: #ccc;
+	
+		}
+	}
+}
+
+
+#diet-info {
+	display: block;
+	width: 100%;
+	padding: 0;
+}
+
+#diet-info .tabs {
+	margin: 0 auto;
+	padding-bottom: 44px;
+	width: 800px;
+	
+}
+.clearfix::after {
+	display: block;
+	clear: both;
+	content: 'dsfs';
+	width: 100%;
+	height: 20px;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	
+}
+
+#diet-info .tabs .btn-tab {
+	display: block;
+	float: left;
+	line-height: 40px;
+	
+	width: 50%;
+	margin: 0;
+	text-align: center;
+	border: 1px solid #002e5b;
+	color: #002e5b;
+}
+
+#diet-info .tabs a.pressed {
+	color: white;
+	background-color: #002e5b;
+}
+#diet-info .tab-content {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	font-size: 18px;
+	line-height: 20px;
+	margin-top: 40px;
+}
+#diet-info .cate,
+#diet-info .diet{
+	width:100%;
+}
+#diet-info .cate-add,
+#diet-info .cate-del,
+#diet-info .diet-add,
+#diet-info .diet-del{
+	margin: 20px auto;
+	padding: 20px 0;
+	width: 100%;
+	min-width: 1000px;
+	font-size: 18px;
+	line-height: 22px;
+	color: white;
+	background-color: #002e5b;
+}
+#diet-info .cate-add .container,
+#diet-info .cate-del .container,
+#diet-info .diet-add .container,
+#diet-info .diet-del .container{
+	width: 400px;
+	margin: 0 auto;
+}
+#diet-info .cate-add .heading,
+#diet-info .cate-del .heading,
+#diet-info .diet-add .heading,
+#diet-info .diet-del .heading {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#diet-info .cate-add .label,
+#diet-info .cate-del .label{
+	
+}
+
+#diet-info .cate-add input,
+#diet-info .cate-del input,
+#diet-info .diet-add input,
+#diet-info .diet-del input{
+	display: block;
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 0 1em;
+	font-size: 18px;
+	line-height: 40px;
+	color: white;
+	background-color: rgba(255,255,255,0.2)
+}
+#diet-info .diet-add form {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+#diet-info .diet-add iframe {
+	display: none;
+}
+#diet-info .diet-add .file-wrapper {
+	display: block;
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 0;
+	font-size: 18px;
+	line-height: 40px;
+	color: white;
+	background-color: rgba(255,255,255,0.2)
+}
+#diet-info .diet-add input[type=file] {
+	display: block;
+	width: 100%;
+	opacity: 0;
+}
+#diet-info .cate-add textarea,
+#diet-info .diet-add textarea{
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0 1em;
+	font-size: 18px;
+	line-height: 1.2em;
+	min-height: 120px;
+	color: white;
+	background-color: rgba(255,255,255,0.2)
+}
+
+#diet-info .cate-add .btn-submit,
+#diet-info .cate-del .btn-submit,
+#diet-info .diet-add .btn-submit,
+#diet-info .diet-del .btn-submit{
+	display: block;
+	width: 100%;
+	text-align: center;
+	line-height: 44px;
+	margin-top: 30px;
+    color: white;
+	background-color: rgba(255,255,255,0.2);
+}
+
+#diet-info .cate-view,
+#diet-info .diet-view{
+	position: relative;
+	background-color: #f1f4f9;
+	padding: 20px 0;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+
+#diet-info .cate-view .heading,
+#diet-info .diet-view .heading{
+	font-size: 18px;
+	line-height: 40px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#diet-info .cate-view .btns,
+#diet-info .diet-view .btns{
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	
+}
+#diet-info .cate-view .btn,
+#diet-info .diet-view .btn{
+	display: inline-block;
+	width: 100px;
+	font-size: 18px;
+	line-height: 38px;
+	text-align: center;
+    color: black;
+	border: 1px solid black;
+}
+#diet-info .cate-view .pressed,
+#diet-info .diet-view .pressed{
+	color: white;
+	background-color: black;
+}
+#diet-info .cate-view table {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.2em;
+	border-collapse: collapse;
+}
+
+#diet-info .cate-view table thead {
+	font-weight: bold;
+	
+}
+#diet-info .cate-view table tr {
+	margin: 5px 0;
+}
+
+#diet-info .cate-view table tbody tr:nth-child(odd) {
+	background-color: #ededed;
+}
+
+#diet-info .cate-view table td:nth-child(4) {
+	width: 700px;
+	
+}
+
+#diet-info .cate-view table tbody td:nth-child(4) {
+	width: 600px;
+	text-align: left;
+}
+	
+
+#diet-info .cate-view table td div {
+	margin: 10px 0;
+	padding: 0 1em;
+	width: 100%;
+	max-height: 100px;
+	word-wrap: break-word;
+	word-break: break-all;
+	overflow-x: hidden;
+	overflow-y: auto;
+	
+}
+.image-show {
+	display: none;
+	position: fixed;
+	width: 50%;
+	padding: 0;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 100;
+}
+.image-close {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 20px;
+	line-height: 40px;
+	text-align: center;
+	width: 40px;
+	color: black;
+	
+	
+}
+.image {
+	display: block;
+	width: 100%;
+	background-color: #002e5b;
+}
+.pic {
+	display: block;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+#diet-info .diet-view table {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.2em;
+	border-collapse: collapse;
+}
+
+#diet-info .diet-view table thead {
+	font-weight: bold;
+	
+}
+#diet-info .diet-view table tr {
+	margin:  0;
+}
+
+#diet-info .diet-view table tbody tr:nth-child(odd) {
+	background-color: #ededed;
+}
+
+#diet-info .diet-view table td:nth-child(8) {
+	width: 600px;
+	
+}
+
+#diet-info .diet-view table tbody td:nth-child(8) {
+	
+	text-align: left;
+}
+	
+
+#diet-info .diet-view table td div {
+	margin: 10px 0;
+	padding: 0 1em;
+	width: 100%;
+	max-height: 100px;
+	word-wrap: break-word;
+	word-break: break-all;
+	overflow-x: hidden;
+	overflow-y: auto;
+	
+}
+
+
+#desk-info .content,
+#faculty-info .content {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	font-size: 18px;
+	line-height: 20px;
+	margin-top: 40px;
+}
+
+#desk-info {
+	display: block;
+	width: 100%;
+	
+}
+
+
+#desk-info .desk-add,
+#desk-info .desk-del
+{
+	margin: 20px auto;
+	padding: 20px 0;
+	width: 100%;
+	min-width: 1000px;
+	font-size: 18px;
+	line-height: 22px;
+	color: white;
+	background-color: #002e5b;
+}
+#desk-info .desk-add .container,
+#desk-info .desk-del .container  {
+	width: 400px;
+	margin: 0 auto;
+}
+#desk-info .desk-add .heading,
+#desk-info .desk-del .heading {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+
+
+#desk-info .desk-add input,
+#desk-info .desk-del input {
+	display: block;
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 0 1em;
+	font-size: 18px;
+	line-height: 40px;
+	color: white;
+	background-color: rgba(255,255,255,0.2)
+}
+
+#desk-info .desk-add .btn-submit,
+#desk-info .desk-del .btn-submit {
+	display: block;
+	width: 100%;
+	text-align: center;
+	line-height: 44px;
+	margin-top: 30px;
+	color: white;
+	background-color: rgba(255,255,255,0.2);
+}
+
+#desk-info .desk-view{
+	position: relative;
+	background-color: #f1f4f9;
+	padding: 20px 0 80px 0;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+
+#desk-info .desk-view .heading {
+	font-size: 18px;
+	line-height: 40px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#desk-info .desk-view .btns {
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	
+}
+#desk-info .desk-view .btn {
+	display: inline-block;
+	width: 120px;
+	font-size: 18px;
+	line-height: 38px;
+	text-align: center;
+	color: black;
+	border: 1px solid black;
+}
+#desk-info .desk-view .btn-download {
+	display: block;
+	position: absolute;
+	bottom: 20px;
+	right: 40px;
+	
+	text-align: center;
+	line-height: 38px;
+	color: black;
+	
+	
+}
+#desk-info .desk-view .btn-qrcode {
+	display: inline-block;
+	width: 100px;
+	border: 1px solid black;
+	color: black;
+}
+#desk-info .desk-view .pressed {
+	color: white;
+	background-color: black;
+}
+
+#desk-info .desk-view .container {
+	width: 80%;
+	min-width: 700px;
+	margin: 0 auto;
+	padding: 10px;
+	border: 2px solid #ededed;
+	
+}
+
+#desk-info .desk-view .desk {
+	display: inline-block;
+	width: 120px;
+	margin: 10px;
+	font-size: 18px;
+	line-height: 38px;
+	text-align: center;
+	border: 1px solid black;
+	
+}
+
+#faculty-info {
+	display: block;
+	width: 100%;
+	
+}
+
+
+#faculty-info .faculty-add,
+#faculty-info .faculty-del
+{
+	margin: 20px auto;
+	padding: 20px 0;
+	width: 100%;
+	min-width: 1000px;
+	font-size: 18px;
+	line-height: 22px;
+	color: white;
+	background-color: #002e5b;
+}
+#faculty-info .faculty-add .container,
+#faculty-info .faculty-del .container  {
+	width: 400px;
+	margin: 0 auto;
+}
+#faculty-info .faculty-add .heading,
+#faculty-info .faculty-del .heading {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+
+
+#faculty-info .faculty-add input,
+#faculty-info .faculty-del input {
+	display: block;
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 0 1em;
+	font-size: 18px;
+	line-height: 40px;
+	color: white;
+	background-color: rgba(255,255,255,0.2);
+}
+#faculty-info .faculty-add select,
+#faculty-info .faculty-add option{
+	display: block;
+	width: 100%;
+	margin-bottom: 15px;
+	padding: 0 1em;
+	font-size: 18px;
+	line-height: 40px;
+	height: 40px;
+	color: white;
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 0;
+	border-width: 0;
+	outline-width: 0;
+}
+
+#faculty-info .faculty-add .btn-submit,
+#faculty-info .faculty-del .btn-submit {
+	display: block;
+	width: 100%;
+	text-align: center;
+	line-height: 44px;
+	margin-top: 30px;
+	color: white;
+	background-color: rgba(255,255,255,0.2);
+}
+
+#faculty-info .faculty-view {
+	position: relative;
+	background-color: #f1f4f9;
+	padding: 20px 0 80px 0;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+
+#faculty-info .faculty-view .heading {
+	font-size: 18px;
+	line-height: 40px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#faculty-info .faculty-view .btns {
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	
+}
+#faculty-info .faculty-view .btn {
+	display: inline-block;
+	width: 100px;
+	font-size: 18px;
+	line-height: 38px;
+	text-align: center;
+	border: 1px solid black;
+	color: black;
+}
+
+#faculty-info .faculty-view .pressed {
+	color: white;
+	background-color: black;
+}
+
+#faculty-info .faculty-view table {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.2em;
+	border-collapse: collapse;
+	
+}
+#faculty-info .faculty-view table td {
+	width: 25%;
+}
+
+#faculty-info .faculty-view table thead {
+	font-weight: bold;
+	
+}
+
+
+#faculty-info .faculty-view table tbody tr:nth-child(odd) {
+	background-color: #ededed;
+}
+
+	
+
+#faculty-info .faculty-view table td div {
+	margin: 10px 0;
+	padding: 0 1em;
+	width: 100%;
+	max-height: 100px;
+	word-wrap: break-word;
+	word-break: break-all;
+	overflow-x: hidden;
+	overflow-y: auto;
+	
+}
+
+
+
+#history {
+	display: block;
+	width: 100%;
+	
+}
+
+#history .tabs {
+	margin: 0 auto;
+	padding-bottom: 44px;
+	width: 800px;
+	
+}
+
+#history .tabs .btn-tab {
+	display: block;
+	float: left;
+	line-height: 40px;
+	
+	width: 50%;
+	margin: 0;
+	text-align: center;
+	border: 1px solid #002e5b;
+	color: #002e5b;
+}
+
+#history .tabs a.pressed {
+	color: white;
+	background-color: #002e5b;
+}
+#history .tab-content {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	font-size: 18px;
+	line-height: 20px;
+	margin-top: 40px;
+}
+#history .period,
+#history .sum,
+#history .feedback{
+	width:100%;
+}
+#history .period .date{
+	margin: 20px auto;
+	padding: 20px 0;
+	width: 100%;
+	min-width: 1000px;
+	font-size: 18px;
+	line-height: 22px;
+	color: white;
+	background-color: #002e5b;
+}
+
+#history .heading {
+	font-size: 18px;
+	line-height: 40px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#history .period table {
+	margin: 0 auto;
+}
+
+#history .period input{
+	display: block;
+	width: 400px;
+	margin-bottom: 15px;
+	padding: 0 1em;
+	font-size: 18px;
+	line-height: 40px;
+	color: white;
+	background-color: rgba(255,255,255,0.2)
+}
+
+#history .period .btn-submit{
+	display: block;
+	width: 100%;
+	text-align: center;
+	line-height: 44px;
+	color: white;
+	background-color: rgba(255,255,255,0.2);
+}
+
+#history .sum,
+#history .feedback{
+	position: relative;
+	background-color: #f1f4f9;
+	margin: 40px 0;
+	padding: 20px 0;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+#history .sum table,
+#history .feedback table {
+	font-size: 18px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+#history .sum table tbody tr:nth-child(odd),
+#history .feedback table tbody tr:nth-child(odd) {
+	background-color: #ededed;
+}
+
+#history .sum table td,
+#history .feedback table td {
+	padding: 10px 0;
+	
+}
+
+#history .trend {
+	width: 100%;
+	font-size: 18px;
+	line-height: 40px;
+}
+#history .trend .duration {
+	text-align: right;
+}
+
+#history .trend .duration input {
+	display: inline-block;
+	width: 120px;
+	font-size: 18px;
+	line-height: 26px;
+	text-align: center;
+	border: 1px solid black;
+}
+
+#history .trend .duration select {
+	display: inline-block;
+	font-size: 18px;
+	line-height: 26px;
+	border: 1px solid black;
+}
+
+#history .trend .duration .btn-submit {
+	display: inline-block;
+	width: 120px;
+	margin-left: 5px;
+	font-size: 18px;
+	line-height: 26px;
+	text-align: center;
+	color: black;
+	border: 1px solid black;
+}
+#history .trend canvas {
+	display: block;
+	width: 100%;
+	margin-top: 40px;
+	background-color: #f1f4f9;
+}
+
+
+#cook-info .content {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	font-size: 18px;
+	line-height: 20px;
+	margin-top: 40px;
+}
+
+#cook-info .date{
+	
+	margin: 20px auto;
+	padding: 20px 0;
+	width: 100%;
+	min-width: 1000px;
+	font-size: 18px;
+	line-height: 22px;
+	color: white;
+	background-color: #002e5b;
+}
+
+#cook-info .heading {
+	font-size: 18px;
+	line-height: 40px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#cook-info .date table {
+	margin: 0 auto;
+}
+
+#cook-info .date table input{
+	display: block;
+	width: 400px;
+	margin-bottom: 15px;
+	padding: 0 1em;
+	font-size: 18px;
+	line-height: 40px;
+	color: white;
+	background-color: rgba(255,255,255,0.2);
+}
+
+#cook-info .date table .btn-submit{
+	display: block;
+	width: 100%;
+	text-align: center;
+	line-height: 40px;
+	color: white;
+	background-color: rgba(255,255,255,0.2);
+}
+
+#cook-info .all-work,
+#cook-info .cook-work {
+	position: relative;
+	background-color: #f1f4f9;
+	margin: 40px 0;
+	padding: 20px 0;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+#cook-info .all-work table,
+#cook-info .cook-work table {
+	font-size: 18px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+#cook-info .all-work table tbody tr:nth-child(odd),
+#cook-info .cook-work table tbody tr:nth-child(odd) {
+	background-color: #ededed;
+}
+
+#cook-info .all-work table td,
+#cook-info .cook-work table td {
+	padding: 10px 0;
+	max-width: 15%;
+	
+}
+#cook-info .all-work table td:nth-child(7) {
+	max-width: 50px;
+}
+
+#cook-info .all-work table a {
+	display: block;
+	width: 120px;
+	margin: auto;
+	line-height: 26px;
+	color: black;
+	border: 1px solid black;
+}
+
+#cook-info .all-work table .pressed {
+	color: white;
+	background-color: black;
+}
+
+#cook-info .cook-work .fid {
+	position: absolute;
+	top: 20px;
+	left: 40px;
+	
+	font-size: 18px;
+	line-height: 40px;
+}
+

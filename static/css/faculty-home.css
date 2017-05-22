@@ -1,0 +1,33 @@
+body {
+	padding: 0;
+	background-color: #9cf;
+}
+
+div.content {
+	margin: 80px 0;
+}
+.main {
+	width: 100%;
+	margin: 0 auto;
+	
+}
+
+a.btn {
+	margin:  0;
+	padding: 60px 0;
+	font-size: 24px;
+	line-height: 24px;
+	border-radius: 0;
+	
+	
+}
+
+.btn-work {
+	background-color: #ff9966;
+}
+.btn-info {
+	background-color: #cc9966;
+}
+.btn-logout {
+	background-color: #99cc99;
+}

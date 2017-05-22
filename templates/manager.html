@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no, minimal-ui" />
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+
+	
+<!--	<link rel="stylesheet" type="text/css" href="manager.css">  -->
+	<link rel="stylesheet" type="text/css" href="{{static_url("css/manager.css")}}"
+  
+
+	<!--{% block head%}{% end %} -->
+
+
+</head>
+
+<body>
+	<div class="menu">
+		
+		<a class="btn-menu" href="javascript:void(0)" id="btn-company">公司信息</a>
+		<a class="btn-menu" href="javascript:void(0)" id="btn-diet">餐谱信息</a>
+		<a class="btn-menu" href="javascript:void(0)" id="btn-desk">桌位信息</a>
+		<a class="btn-menu" href="javascript:void(0)" id="btn-faculty">员工信息</a>
+		<a class="btn-menu" href="javascript:void(0)" id="btn-history">流水信息</a>
+		<a class="btn-menu" href="javascript:void(0)" id="btn-cook">厨师业绩</a>
+		<a class="btn-menu" href="javascript:void(0)" id="btn-update">系统更新</a>
+		<a class="btn-menu" href="javascript:void(0)">关闭系统</a>
+		
+	</div>
+	
+	<div class="content">
+		<div id="company-info" class="section">
+			<div class="container">
+				<div class="label">公司全称</div>
+				<input type="text" class="input" id="company-name">
+				<div class="label">公司简称</div>
+				<input type="text" class="input" id="company-sname">
+				<div class="label">地址</div>
+				<input type="text" class="input" id="company-address">
+				<div class="label">欢迎信息</div>
+				<textarea class="input" id="company-welcome"></textarea>
+				<div class="label">介绍</div>
+				<textarea class="input" id="company-desc"></textarea>
+				<a class="btn-submit" id="company-submit" href="javascript:void(0)">提交</a>
+
+			</div>
+				
+		</div>
+		<div id="diet-info" class="section">
+			
+			<div class="tabs">
+				<a class="btn-tab pressed" href="javascript:void(0)" id="btn-tab-cate">分组</a>
+				<a class="btn-tab" href="javascript:void(0)" id="btn-tab-diet">餐谱</a>
+				
+			</div>
+			
+			<div class="tab-content">
+				<div class="cate">
+					<div class="cate-add" style="display: none;">
+						<div class="container">
+							<div class="heading">添加</div>
+							<div class="label">编号</div>
+							<input type="text" id="cid">
+							<div class="label">名称</div>
+							<input type="text" id="c-name">
+							<div class="label">顺序</div>
+							<input type="text"id="c-order">
+							<div class="label">介绍</div>
+							<textarea id="c-desc"></textarea>
+							<a class="btn-submit" href="javascript:void(0)" id="btn-cate-add-submit">确定</a>
+						</div>
+					</div>
+					<div class="cate-del" style="display: none;">
+						<div class="container">
+							<div class="heading">删除</div>
+							<div class="label">编号</div>
+							<input type="text" id="cid2">
+							
+							<a class="btn-submit" href="javascript:void(0)" id="btn-cate-del-submit">确定</a>
+						</div>
+					</div>
+					<div class="cate-view">
+						<div class="heading">分组</div>
+						<div class="btns">
+                            <a class="btn" href="javascript:void(0)" id="btn-cate-show">显示</a>
+							<a class="btn" href="javascript:void(0)" id="btn-cate-add">添加</a>
+							<a class="btn" href="javascript:void(0)" id="btn-cate-del">删除</a>
+						</div>
+						<table id="cate-table">
+							<thead>
+								<tr>
+									<td>编号</td>
+									<td>名称</td>
+									<td>顺序</td>
+									<td>介绍</td>									
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><div class="cid">0001</div></td>
+									<td><div class="name">主食</div></td>
+									<td><div class="th">3</div></td>
+									<td><div class="desc">无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf</div></td>
+								</tr>
+								
+								
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="diet" style="display: none;">
+					<div class="diet-add" style="display: none;">
+						<div class="container">
+							<form action="/diet-add" method="post" enctype="multipart/form-data" target="iframe">
+								<div class="heading">添加</div>
+								<div class="label">编号</div>
+								<input type="text" name="did">
+								<div class="label">名称</div>
+								<input type="text" name="name">
+								<div class="label">顺序</div>
+								<input type="text" name="order">
+								<div class="label">价格</div>
+								<input type="text" name="price">
+								<div class="label">单位</div>
+								<input type="text" name="base">
+								<div class="label">分组</div>
+								<input type="text" name="cid">
+								<div class="label">图片</div>
+								<div class="file-wrapper">
+									<input type="file" name="picture">
+								</div>
+								<div class="label">介绍</div>
+								<textarea name="desc"></textarea>
+								<input type="submit" class="btn-submit" id="btn-diet-add-submit">
+							</form>
+								
+							<iframe name="iframe"></iframe>
+						</div>
+					</div>
+					<div class="diet-del" style="display: none;">
+						<div class="container">
+							<div class="heading">删除</div>
+							<div class="label">编号</div>
+							<input type="text" id="did2">
+							
+							<a class="btn-submit" href="javascript:void(0)" id="btn-diet-del-submit">确定</a>
+						</div>
+					</div>
+					<div class="diet-view">
+						<div class="heading">分组</div>
+						<div class="btns">
+                            <a class="btn" href="javascript:void(0)" id="btn-diet-show">显示</a>
+							<a class="btn" href="javascript:void(0)" id="btn-diet-add">添加</a>
+							<a class="btn" href="javascript:void(0)" id="btn-diet-del">删除</a>
+						</div>
+						<div class="image-show">
+							<a class="image-close" href="javascript:void(0)">X</a>
+							<img class="image" src="#" alt="#">
+						</div>
+						<table id="diet-table">
+							<thead>
+								<tr>
+									<td>编号</td>
+									<td>名称</td>
+									<td>顺序</td>
+									<td>价格</td>
+									<td>单位</td>
+									<td>分组</td>
+									<td>图片</td>
+									<td>介绍</td>									
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><div class="cid">0001</div></td>
+									<td><div class="name">主食</div></td>
+									<td><div class="th">3</div></td>
+									<td><div class="price">26.0</div></td>
+									<td><div class="base">1</div></td>
+									<td><div class="cid">3</div></td>
+									<td><div class="pic">查看</div></td>
+									<td><div class="desc">无fgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf无fgdgdgdgfgdgdfdgdgdgdgfdffgdgf</div></td>
+								</tr>
+								
+								
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+				
+		</div>
+		<div id="desk-info" class="section">
+			<div class="content">
+				<div class="desk-add" style="display: none;">
+					<div class="container">
+								<div class="heading">添加</div>
+								<div class="label">编号</div>
+								<input type="text" id="input-desk-add">
+
+								<a class="btn-submit" href="javascript:void(0)" id="btn-desk-add-submit">确定</a>
+					</div>
+				</div>
+				<div class="desk-del" style="display: none;">
+					<div class="container">
+								<div class="heading">删除</div>
+								<div class="label">编号</div>
+								<input type="text" id="input-desk-del">
+
+								<a class="btn-submit" href="javascript:void(0)" id="btn-desk-del-submit">确定</a>
+					</div>
+				</div>
+				<div class="desk-view">
+					<div class="heading">桌位</div>
+					<div class="btns">
+						<a class="btn" href="javascript:void(0)" id="btn-desk-show">显示</a>
+						<a class="btn" href="javascript:void(0)" id="btn-desk-add">添加</a>
+						<a class="btn" href="javascript:void(0)" id="btn-desk-del">删除</a>
+					</div>
+					<div class="container">
+						<div class="desk">1</div>
+					</div>
+					<div class="btn-download">
+						<a class="btn-qrcode" href="javascript:void(0)" id="btn-desk-tar">生成二维码</a>
+						<a class="btn-qrcode" href="/static/qrcode.tar" id="btn-desk-download">下载二维码</a>
+					</div>
+					
+				</div>
+			</div>
+				
+		</div>
+		<div id="faculty-info" class="section">
+			<div class="content">
+				<div class="faculty-add" style="display: none;">
+					<div class="container">
+						<div class="heading">添加</div>
+						<div class="label">编号</div>
+						<input type="text" id="input-faculty-fid">
+						<div class="label">姓名</div>
+						<input type="text" id="input-faculty-name">
+						<div class="label">职位</div>
+						<select id="input-faculty-role"><option value='manager'>经理</option><option value='waiter'>服务员</option><option value="cook">厨师</option></select>
+						<div class="label">密码</div>
+						<input type="text" id="input-faculty-passwd">
+						<a class="btn-submit" href="javascript:void(0)" id="btn-faculty-add-submit">确定</a>
+					</div>
+				</div>
+				<div class="faculty-del" style="display: none;">
+					<div class="container">
+								<div class="heading">删除</div>
+								<div class="label">编号</div>
+								<input type="text" id="input-faculty-fid2">
+
+								<a class="btn-submit" href="javascript:void(0)" id="btn-faculty-del-submit">确定</a>
+					</div>
+				</div>
+				<div class="faculty-view">
+					<div class="heading">员工</div>
+						<div class="btns">
+							<a class="btn" href="javascript:void(0)" id="btn-faculty-show">显示</a>
+							<a class="btn" href="javascript:void(0)" id="btn-faculty-add">添加</a>
+							<a class="btn" href="javascript:void(0)" id="btn-faculty-del">删除</a>
+						</div>
+						<table id="faculty-table">
+							<thead>
+								<tr>
+									<td>编号</td>
+									<td>姓名</td>
+									<td>职位</td>
+									<td>密码</td>									
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><div class="fid">0001</div></td>
+									<td><div class="name">Jack</div></td>
+									<td><div class="role">3</div></td>
+									<td><div class="passwd">无</div></td>
+								</tr>
+								
+								
+							</tbody>
+						</table>
+				</div>
+			</div>
+			
+		</div>
+		<div id="history" class="section">
+			<div class="tabs">
+				<a class="btn-tab pressed" href="javascript:void(0)" id="btn-tab-period">统计</a>
+				<a class="btn-tab" href="javascript:void(0)" id="btn-tab-trend">趋势</a>
+				<a class="btn-tab" href="javascript:void(0)" id="btn-tab-detail">流水</a>
+			</div>
+			
+			<div class="tab-content">
+				<div class="period">
+					<div class="date">
+						<div class="heading">时间</div>
+					
+						<table>
+							<tr>
+								<td>从：</td>
+								<td><input type="text" id="input-timefrom"></td>
+							</tr>
+							<tr>
+								<td>至：</td>
+								<td><input type="text" id="input-timeto"></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><a class="btn-submit" href="javascript:void(0)" id="btn-period-submit">查询</a></td>
+							</tr>
+						</table>
+						
+					</div>
+					
+					<div class="sum">
+						<div class="heading">数量和金额</div>
+						<table id="sum-table">
+							<thead>
+								<tr>
+									<th>编号</th>
+									<th>名称</th>
+									<th>数量</th>
+									<th>价格</th>
+									<th>总额</th>
+									<th>比例</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>0001</td>
+									<td>宫保鸡丁</td>
+									<td>1</td>
+									<td>26.0</td>
+									<td>26.0</td>
+									<td>100</td>
+									
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+					<div class="feedback">
+						<div class="heading">评价</div>
+						<table id="feedback-table">
+							<thead>
+								<tr>
+									<th>编号</th>
+									<th>名称</th>
+									<th>数量</th>
+									<th>好吃</th>
+									<th>一般</th>
+									<th>不好吃</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>0001</td>
+									<td>宫保鸡丁</td>
+									<td>1</td>
+									<td>1</td>
+									<td>0</td>
+									<td>0</td>
+									
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+				</div>
+				<div class="trend" style="display: none;">
+					<div class="duration">
+						过去<input type="text" id="input-trend-num">个<select id="input-trend-base"><option value="day">日</option><option value="week">周</option><option value="month">月</option></select><a class="btn-submit" href="javascript:void(0)" id="btn-trend-submit">查询</a>
+					</div>
+					
+					<canvas id="map"></canvas>
+				</div>
+				<div class="detail" style="display: none;">
+					<div class="date">
+						<div class="heading">时间</div>
+					
+						<table>
+							<tr>
+								<td>从：</td>
+								<td><input type="text" id="input-timefrom2"></td>
+							</tr>
+							<tr>
+								<td>至：</td>
+								<td><input type="text" id="input-timeto2"></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><a class="btn-submit" href="javascript:void(0)" id="btn-detail-submit">查询</a></td>
+							</tr>
+						</table>
+						
+					</div>
+					<div class="history-detail">
+						<div class="heading">账单记录</div>
+						<table id="detail-table">
+							<thead>
+								<tr>
+									<th>订单</th>
+									<th>桌号</th>
+									<th>名称</th>
+									<th>数量</th>
+									<th>价格</th>
+									<th>时间</th>
+									
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1000</td>
+									<td>0001</td>
+									<td>宫保鸡丁</td>
+									<td>1</td>
+									<td>26.0</td>
+									<td>2016.1.1 12:13</td>		
+								</tr>
+								
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div id="cook-info" class="section">
+			
+			<div class="content">
+				<div class="date">
+					<div class="heading">时间</div>
+
+					<table>
+						<tr>
+							<td>从：</td>
+							<td><input type="text" id="input-cook-from"></td>
+						</tr>
+						<tr>
+							<td>至：</td>
+							<td><input type="text" id="input-cook-to"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><a class="btn-submit" href="javascript:void(0)" id="btn-cook-submit">查询</a></td>
+						</tr>
+					</table>
+
+				</div>
+
+				<div class="all-work">
+					<div class="heading">数量和金额</div>
+						<table id="all-work-table">
+							<thead>
+								<tr>
+									<th>编号</th>
+									<th>姓名</th>
+									<th>数量</th>
+									<th>比例</th>
+									<th>总额</th>
+									<th>比例</th>
+									<th>评价</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>0004</td>
+									<td>厨师</td>
+									<td>1</td>
+									<td>100</td>
+									<td>26.0</td>
+									<td>100</td>
+									<td><a class="cook-detail">查看</a></td>
+
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td>1</td>
+									<td>100</td>
+									<td>26.0</td>
+									<td>100</td>
+									<td><a class="detail"></a></td>
+
+								</tr>
+							</tbody>
+						</table>
+				</div>
+
+				<div class="one-cook-work">
+					<div class="heading">小明</div>
+					<div class="fid">0004</div>
+					<table>
+						<thead>
+							<tr>
+								<th>编号</th>
+								<th>名称</th>
+								<th>数量</th>
+								<th>好吃</th>
+								<th>一般</th>
+								<th>不好吃</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>0001</td>
+								<td>宫保鸡丁</td>
+								<td>1</td>
+								<td>1</td>
+								<td>0</td>
+								<td>0</td>
+
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			
+			</div>
+			
+		</div>
+		<div id="update" class="section">
+		</div>
+	</div>
+
+  <script src="/static/js/jquery-1.11.2.min.js"></script>
+  <script src="/static/js/jquery.mobile.custom.min.js"></script>
+  <script src="/static/js/Chart.min.js"></script>
+  <script src="{{static_url("js/base.js")}}"></script>
+  <script src="{{static_url("js/manager.js")}}"></script>
+</body>
+</html>
